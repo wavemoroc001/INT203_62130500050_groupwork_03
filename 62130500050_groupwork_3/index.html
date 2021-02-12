@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Basic Vue Js - HelloWorld App</title>
+
+    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
+    <!-- Using via Google Web Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- https://tailwindcss.com/docs/installation -->
+    <!-- Using Tailwind via CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+    <!-- Vue CDN -->
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app" class="">
+
+        <div class="flex-col max-w-4xl mx-auto p-8">
+            <h1 class="text-4xl font-semibold bg-gray-300 p-4">Gallery</h1>
+
+            <div class="flex p-6">
+                <h1 class="text-3xl">Emeral Lake USA</h1>
+                <button v-on:click="toggleShow" class="focus:outline-none">
+                    <svg class="ml-5 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                    </svg>
+
+                    <svg class="ml-5 mt-1 " xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M6.28 3c3.236.001 4.973 3.491 5.72 5.031.75-1.547 2.469-5.021 5.726-5.021 2.058 0 4.274 1.309 4.274 4.182 0 3.442-4.744 7.851-10 13-5.258-5.151-10-9.559-10-13 0-2.676 1.965-4.193 4.28-4.192zm.001-2c-3.183 0-6.281 2.187-6.281 6.192 0 4.661 5.57 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-4.011-3.097-6.182-6.274-6.182-2.204 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248z" />
+                    </svg>
+                </button>
+            </div>
+            <a href="#" target="_blank" class="bg-white rounded h-full text-grey-darkest no-underline shadow-md pb-3">
+                <img class="w-full block rounded-b" src="./images/Emeral Lake.jpg" alt="A photo of a fox">
+            </a>
+
+
+
+
+
+
+            <a href="https://unsplash.com/photos/ECw_uer2ed8" target="_blank"
+                class="bg-white rounded h-full text-grey-darkest no-underline shadow-md pb-3">
+                <h1 class="text-3xl p-6">Floras Lake USA</h1>
+                <img class="w-full block rounded-b" src="./images/Floras Lake .jpg" alt="A photo of a woman">
+            </a>
+            <a href="https://unsplash.com/photos/pCfZ79jhVZo" target="_blank"
+                class="bg-white rounded h-full text-grey-darkest no-underline shadow-md pb-3">
+                <h1 class="text-3xl p-6">Ninh Binh Vietnam</h1>
+                <img class="w-full block rounded-b" src="./images/Ninh Binh Vietnam.jpg" alt="A photo of some reeds">
+            </a>
+            <a href="https://unsplash.com/photos/tV_1sC603zA" target="_blank"
+                class="bg-white rounded h-full text-grey-darkest no-underline shadow-md pb-3">
+                <h1 class="text-3xl p-6">Oak Alley USA.</h1>
+                <img class="w-full block rounded-b" src="./images/Oak Alley Us.jpg" alt="A photo of a man">
+            </a>
+            <a href="https://unsplash.com/photos/9z3PSK4sn1c" target="_blank"
+                class="bg-white rounded h-full text-grey-darkest no-underline shadow-md pb-3">
+                <h1 class="text-3xl p-6">Skagit Valley USA.</h1>
+                <img class="w-full block rounded-b" src="./images/Skagit Valley Us.jpg" alt="A photo of a forest">
+            </a>
+        </div>
+
+
+        <!-- my main.js -->
+        <script src="./main.js"></script>
+</body>
+
+
+
+</html>
