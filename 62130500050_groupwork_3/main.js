@@ -1,18 +1,25 @@
 const app = {
     data() {
         return {
-            tasks: [{ show1: false, like: false },
-            { show: false, like: false },
-            { show: false, like: false }
+            tasks: [{
+                title: 'Emeral Lake USA',
+                src: './images/Emeral Lake.jpg',
+                des: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, aperiam? Earum molestias vel voluptatibus, qui voluptatem sint possimus. Voluptatem, optio!',
+                show: false,
+                like: false,
+                dislike: true
+            }
             ]
         }
     },
     method: {
-        toggleShow(index) {
-            this.tasks[index].show = !this.tasks[index].show
+            toggleLike(index) {
+            this.tasks[index].dislike = !this.tasks[index].like
+            this.tasks[index].like = !this.tasks[index].dislike
+            console.log("state \n tasks[index].dislike \n tasks[index].like")
         },
-        toggleLike(index) {
-            this.tasks[index].like = !this.tasks[index].like
+         welcome:function (event) {
+            console.log("Hello");            
         }
     }
 }
