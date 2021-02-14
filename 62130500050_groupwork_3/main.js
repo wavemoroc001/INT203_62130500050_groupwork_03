@@ -13,13 +13,7 @@ const app = {
         }
     },
     method: {
-            toggleLike(index) {
-            this.tasks[index].dislike = !this.tasks[index].like
-            this.tasks[index].like = !this.tasks[index].dislike
-            console.log("state \n tasks[index].dislike \n tasks[index].like")
-        },
-         welcome:function (event) {
-            console.log("Hello");            
+        toggleLike(){
         }
     }
 }
